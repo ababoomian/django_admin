@@ -29,9 +29,10 @@ const Projects = ({data}) => {
                 </FlexContainer>
                 <PaddingContainer top="1rem">
                     <FlexContainer gap="1.5rem">
-                        {data.tech_stack.map((stack)=>(
+                        {/* {data.tech_stack.map((stack)=>(
                             <TechStackCard>{stack}</TechStackCard>
-                        ))}
+                        ))} */}
+                        <TechStackCard>{data.tech_stack}</TechStackCard>
                     </FlexContainer>
                 </PaddingContainer>
                 <ParaText top="1.5rem" bottom="2rem">{data.project_desc}</ParaText>
